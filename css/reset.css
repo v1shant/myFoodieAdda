@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation bar: Logo and image */
+#logo{
+    margin: 5px 16px;    
+}
+
+#logo img{
+    height: 56px;
+    margin: 0px 16px;
+
+}
+/* Navigation bar: List styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Stick No Bills', sans-serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 10px 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 573px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    /* background: url('../images/salad.jpg') no-repeat center center/cover; */
+    background: url('../images/salad.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.78;
+    /* background-size: 100%; */
+
+}
+#home h1{
+    color: rgb(75, 20, 20);
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 36px;
+    border-radius: 23px;
+    background-color: #f5e9e9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    opacity: 180%;
+}
+#services{}
+#services{}
+#services{}
+#services{}
+
+/* Client Section */
+#client-section{
+    height: 395px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/pexels-lisa-1279330.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#client-section h1{
+    color: black;
+    font-size: 3.8rem;
+    padding: 20px;    
+    font-family: 'Stick No Bills', sans-serif;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* Contact section */
+#contact{
+    height: 440px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 440px;
+    z-index: -11;
+    opacity: 0.4;
+    background: url(../images/contact.png) no-repeat center center/cover;
+    
+}
+#contact h1{
+    color: black;
+    font-size: 3.8rem;
+    padding: 10px;   
+    font-family: 'Stick No Bills', sans-serif;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;    
+    color: #3dbd2e;
+    font-family: 'Stick No Bills', sans-serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 20px 10px;
+}
+.center{
+    text-align: center;
+}
